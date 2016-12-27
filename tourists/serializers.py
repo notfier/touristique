@@ -22,7 +22,7 @@ class TouristCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = TouristCard
         fields = ('card_id', 'is_active', 'current_department', 'created', 'tourist',)
-        read_only = ('created', 'card_id',)
+        read_only = ('created', 'card_id', 'is_active')
 
     def get_card_id(self, obj):
         return obj.card_id.hex

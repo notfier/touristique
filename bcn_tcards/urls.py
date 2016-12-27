@@ -16,13 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from rest_framework.authtoken import views
-
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^api-token-auth/', views.obtain_auth_token),
-    url(r'^auth/', include('registration.urls')),
-    url(r'^data/', include('data.urls')),
-    url(r'^tourists/', include('tourists.urls')),
+    url(r'^api/admin/', include(admin.site.urls)),
+    url(r'^api/auth/', include('registration.urls')),
+    url(r'^api/data/', include('data.urls')),
+    url(r'^api/tourists/', include('tourists.urls')),
 ]
