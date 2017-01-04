@@ -7,6 +7,9 @@ from .serializers import DepartmentSerializer
 
 
 class DepartmentList(generics.ListAPIView):
+    """
+    Get departments list.
+    """
 
     authentication_classes = (authentication.TokenAuthentication,)
     queryset = Department.objects.all()
@@ -15,10 +18,11 @@ class DepartmentList(generics.ListAPIView):
 
 class DepartmentInfo(generics.RetrieveUpdateAPIView, generics.CreateAPIView):
     """
-    Update/Get/Add a tourist card.
-    GET: get a tourist card info by its tourist card pk.
-    PUT: update a tourist card info with itself data.
-    POST: create a new tourist card providing all necessary data.
+    Update/Get/Add a department.
+
+    GET: get a department providing (department_pk) param.
+    PUT: update a department info with itself data providing (department_pk) param.
+    POST: create a new department providing all necessary data.
     """
     authentication_classes = (authentication.TokenAuthentication,)
     serializer_class = DepartmentSerializer

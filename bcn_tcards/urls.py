@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^api/auth/', include('registration.urls')),
     url(r'^api/data/', include('data.urls')),
     url(r'^api/tourists/', include('tourists.urls')),
+    url(r'^api/docs/', include('rest_framework_docs.urls')),
 ]
