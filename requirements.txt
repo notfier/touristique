@@ -1,6 +1,5 @@
 Django==1.9.12
 djangorestframework==3.5.3
 factory-boy==2.7.0
-fake-factory==0.7.2
 ipdb==0.10.1
 ipython==5.1.0

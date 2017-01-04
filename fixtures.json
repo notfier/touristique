@@ -1,0 +1,559 @@
+[
+{
+    "model": "data.department",
+    "pk": 1,
+    "fields": {
+        "name": "Silvio",
+        "address": "",
+        "zip_code": "43534",
+        "phone": "12345"
+    }
+},
+{
+    "model": "data.department",
+    "pk": 2,
+    "fields": {
+        "name": "Oregon",
+        "address": "",
+        "zip_code": "234653",
+        "phone": "64321"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 1,
+    "fields": {
+        "first_name": "Miguel",
+        "middle_name": "Marco",
+        "last_name": "Marquez",
+        "email": "migo@tmail.sp",
+        "date_joined": "2017-01-02T18:31:26.094Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 2,
+    "fields": {
+        "first_name": "Rob",
+        "middle_name": "",
+        "last_name": "Wright",
+        "email": "Rob@wild.co.uk",
+        "date_joined": "2017-01-04T16:57:11.442Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 3,
+    "fields": {
+        "first_name": "Mark",
+        "middle_name": "",
+        "last_name": "afsdgsd",
+        "email": "sdgs@gmail.com",
+        "date_joined": "2017-01-04T19:39:22.256Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 4,
+    "fields": {
+        "first_name": "Mark",
+        "middle_name": "",
+        "last_name": "Martello",
+        "email": "marti@brazri.br",
+        "date_joined": "2017-01-04T19:40:39.938Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 5,
+    "fields": {
+        "first_name": "Bruno",
+        "middle_name": "Martins",
+        "last_name": "Indi",
+        "email": "indi@footer.hl",
+        "date_joined": "2017-01-04T19:44:16.612Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 6,
+    "fields": {
+        "first_name": "Mark",
+        "middle_name": "",
+        "last_name": "Overmars",
+        "email": "ex_foot@play.co.uk",
+        "date_joined": "2017-01-04T19:45:38.405Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 7,
+    "fields": {
+        "first_name": "Martini",
+        "middle_name": "",
+        "last_name": "Bianco",
+        "email": "brebo@gmail.com",
+        "date_joined": "2017-01-04T19:46:41.344Z"
+    }
+},
+{
+    "model": "tourists.tourist",
+    "pk": 8,
+    "fields": {
+        "first_name": "Lucas",
+        "middle_name": "",
+        "last_name": "Perez",
+        "email": "from_depor@arsenal.com",
+        "date_joined": "2017-01-04T19:47:18.683Z"
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "1fdd8cbb-9e3a-4877-9f42-96007333bb0f",
+    "fields": {
+        "tourist": 5,
+        "is_active": true,
+        "created": "2017-01-04T19:44:16.619Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "2a077003-7888-440d-a8ac-dfc203819904",
+    "fields": {
+        "tourist": 6,
+        "is_active": true,
+        "created": "2017-01-04T19:45:38.411Z",
+        "current_department": 2
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "420bc740-8ab3-4a45-b1e3-d80df2fb0fcc",
+    "fields": {
+        "tourist": 7,
+        "is_active": true,
+        "created": "2017-01-04T19:46:41.350Z",
+        "current_department": 2
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "61d2f05b-6412-4b86-9036-c3c172ee7cae",
+    "fields": {
+        "tourist": 4,
+        "is_active": true,
+        "created": "2017-01-04T19:40:39.943Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "78bcfdc0-b573-4d1e-8bb8-519963f21716",
+    "fields": {
+        "tourist": 8,
+        "is_active": true,
+        "created": "2017-01-04T19:47:18.689Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "9caf4a3e-89f6-40f7-bae3-8aac825a9690",
+    "fields": {
+        "tourist": 3,
+        "is_active": true,
+        "created": "2017-01-04T19:39:22.263Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "db2dbc15-027c-478f-bbec-cc3d341c8d1e",
+    "fields": {
+        "tourist": 2,
+        "is_active": true,
+        "created": "2017-01-04T16:57:11.449Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "tourists.touristcard",
+    "pk": "f688b0c0-bfec-4125-9d65-290c40be7729",
+    "fields": {
+        "tourist": 1,
+        "is_active": true,
+        "created": "2017-01-02T18:33:07.287Z",
+        "current_department": 1
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "data",
+        "model": "department"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "registration",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "tourists",
+        "model": "tourist"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "tourists",
+        "model": "touristcard"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add department",
+        "content_type": 1,
+        "codename": "add_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change department",
+        "content_type": 1,
+        "codename": "change_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete department",
+        "content_type": 1,
+        "codename": "delete_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 2,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 2,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 2,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add tourist",
+        "content_type": 3,
+        "codename": "add_tourist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change tourist",
+        "content_type": 3,
+        "codename": "change_tourist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete tourist",
+        "content_type": 3,
+        "codename": "delete_tourist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add tourist_card",
+        "content_type": 4,
+        "codename": "add_touristcard"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change tourist_card",
+        "content_type": 4,
+        "codename": "change_touristcard"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete tourist_card",
+        "content_type": 4,
+        "codename": "delete_touristcard"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 5,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 5,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 5,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 6,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 6,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 6,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 7,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 7,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 7,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 8,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 8,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 8,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 9,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 9,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 9,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 10,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 10,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 10,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "registration.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$24000$7ihygsOIgtRR$YIQwvLJylqYqUzGwLaS4o8PR857S49VwMmbM/4SknPw=",
+        "last_login": null,
+        "is_superuser": true,
+        "first_name": "Paul",
+        "middle_name": "",
+        "last_name": "Checker",
+        "email": "admin@admin.com",
+        "date_joined": "2017-01-02T18:29:03.984Z",
+        "last_modified": "2017-01-02T18:29:51.738Z",
+        "is_active": true,
+        "is_staff": true,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
