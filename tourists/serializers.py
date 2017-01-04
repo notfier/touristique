@@ -11,6 +11,9 @@ class TouristSerializer(serializers.ModelSerializer):
         model = Tourist
         fields = ('id', 'first_name', 'middle_name', 'last_name', 'email', 'date_joined',)
         read_only_fields = ('date_joined',)
+        extra_kwargs = {
+            'email': {'validators': []}  # DRF validates nested unique field for creation by default during update
+        }
 
 
 class TouristCardSerializer(serializers.ModelSerializer):
@@ -22,7 +25,7 @@ class TouristCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = TouristCard
         fields = ('card_id', 'is_active', 'current_department', 'created', 'tourist',)
-        read_only = ('created', 'card_id', 'is_active')
+        read_only = ('created', 'card_id', 'is_active',)
 
     def get_card_id(self, obj):
         return obj.card_id.hex
@@ -31,7 +34,7 @@ class TouristCardSerializer(serializers.ModelSerializer):
         """
         Update nested tourist info over tourist card manually.
         """
-        tourist = TouristSerializer(instance=instance.tourist, data=validated_data.get('tourist'))
+        tourist = TouristSerializer(instance=instance.tourist, data=self.validated_data.get('tourist'))
         if tourist.is_valid():
             tourist.save()
         return instance
