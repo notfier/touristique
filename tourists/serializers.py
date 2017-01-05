@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from rest_framework import serializers
 
 from data.fields import DepartmentField
@@ -9,10 +10,12 @@ class TouristSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Tourist
-        fields = ('id', 'first_name', 'middle_name', 'last_name', 'email', 'date_joined',)
+        fields = ('id', 'first_name', 'middle_name', 'last_name', 'email',
+                  'date_joined',)
         read_only_fields = ('date_joined',)
         extra_kwargs = {
-            'email': {'validators': []}  # DRF validates nested unique field for creation by default during update
+            'email': {'validators': []}  # DRF validates nested unique field
+                                         # for creation by default during update
         }
 
 
@@ -24,7 +27,8 @@ class TouristCardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TouristCard
-        fields = ('card_id', 'is_active', 'current_department', 'created', 'tourist',)
+        fields = ('card_id', 'is_active', 'current_department', 'created',
+                  'tourist',)
         read_only = ('created', 'card_id', 'is_active',)
 
     def get_card_id(self, obj):
@@ -34,7 +38,10 @@ class TouristCardSerializer(serializers.ModelSerializer):
         """
         Update nested tourist info over tourist card manually.
         """
-        tourist = TouristSerializer(instance=instance.tourist, data=self.validated_data.get('tourist'))
+        tourist = TouristSerializer(
+            instance=instance.tourist,
+            data=self.validated_data.get('tourist')
+        )
         if tourist.is_valid():
             tourist.save()
         return instance
@@ -45,5 +52,8 @@ class TouristCardSerializer(serializers.ModelSerializer):
         """
         tourist_data = validated_data.pop('tourist')
         tourist = Tourist.objects.create(**tourist_data)
-        tourist_card = TouristCard.objects.create(tourist=tourist, **validated_data)
+        tourist_card = TouristCard.objects.create(
+            tourist=tourist,
+            **validated_data
+        )
         return tourist_card

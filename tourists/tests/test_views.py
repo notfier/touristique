@@ -12,7 +12,11 @@ from tourists.models import Tourist, TouristCard
 class TestTouristInfo(APITestCase):
 
     def setUp(self):
-        user = User.objects.create(first_name='Bo', last_name='Devchik', email='bohdan@gmail.com')
+        user = User.objects.create(
+            first_name='Bo',
+            last_name='Devchik',
+            email='bohdan@gmail.com'
+        )
         token_key = Token.objects.get(user=user).key
         self.client.credentials(HTTP_AUTHORIZATION='Token {0}'.format(token_key))
 
